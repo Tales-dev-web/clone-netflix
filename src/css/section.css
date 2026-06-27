@@ -1,0 +1,87 @@
+section{
+    color: white;
+    border-bottom: solid 8px gray;
+    margin-bottom: 2%;
+    height: 400;
+}
+
+section h2 {
+    font-size: 3rem;
+}
+
+section h3{
+    font-size: 1.5rem;
+}
+
+.accordion{
+    --bs-accordion-bg: #2d2d2d !important;
+    --bs-accordion-color: white !important;
+    --bs-accordion-btn-bg:  #2d2d2d !important;
+    --bs-accordion-btn-color: white !important;
+    --bs-accordion-active-color: white !important;
+    --bs-accordion-border-color: #000 !important;
+}
+
+.accordion-button{
+    font-size: 2rem 1.5rem !important;
+    padding: 1.6rem !important;
+    border-radius: 0;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button::after{
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
+
+}
+
+.accordion-item{
+    margin-bottom: 8px;
+    border: none;
+}
+
+.accordion.body{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-top: solid 1px black;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #2d2d2d !important;
+}
+
+p{
+    text-align: center;
+}
+
+
+.assinatura{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.assinatura input{
+     width: 500px;
+    height: 55px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.295);
+    color: white;
+    margin-right: 15px;
+    margin-top: 1%;
+    
+}
+
+.assinatura button{
+    font-weight: bold;
+    font-size: 20px;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 55px;
+    width: 15%;
+     margin-top: 1%;
+}

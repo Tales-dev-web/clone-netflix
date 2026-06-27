@@ -1,0 +1,38 @@
+
+.footer a{
+    display: block;
+    color: gray;
+    margin-top: 4%;
+}
+
+footer .idioma{
+    margin-top: 3%;
+}
+
+footer .final{
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+
+footer h5{
+    color: gray;
+}
+
+footer h6{
+    color: gray;
+}
+
+footer select{
+    padding: 3px 30px;
+    background: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-principal{
+    margin-top: 8%;
+}
+
+select i{
+    color: white;
+}
