@@ -16,57 +16,70 @@ import magica from './assets/como-magica.webp'
  function Section() {
   return (
     <>
-     <section className='d-flex align-items-center'>
-      <div className='container'>
-
-        <div className='row d-flex align-items-center' >
-          <div className='col-6'>
-            <h2>Aproveite na TV</h2>
-            <h3>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h3>
-          </div>
-          <div className='col-6 d-flex justify-content-center'><img src={jurassic} alt='imagem' /></div>
-        </div>
-      </div>
-    </section>
-
-     <section className='d-flex align-items-center'>
-      <div className='container'>
-        <div className='row d-flex align-items-center'>
-           <div className='col-6 d-flex justify-content-center'><img src={vikigns} alt='imagem' /></div>
-           <div className='col-6'>
-            <h2>Baixe séries para assistir offline</h2>
-            <h3>Salve seus títulos favoritos e sempre tenha algo para assistir.</h3>
+     {/* SEÇÃO 1: Texto em cima no mobile, Lado a lado no Desktop */}
+      <section className='d-flex align-items-center py-5 border-bottom bg-black text-white'>
+        <div className='container'>
+          <div className='row d-flex align-items-center'>
+            {/* col-12: ocupa 100% no mobile | col-md-6: ocupa 50% no desktop */}
+            <div className='col-12 col-md-6 text-center text-md-start mb-4 mb-md-0'>
+              <h2>Aproveite na TV</h2>
+              <h3>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h3>
+            </div>
+            <div className='col-12 col-md-6 d-flex justify-content-center'>
+              <img src={jurassic} alt='imagem' className="img-fluid" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section className='d-flex align-items-center'>
-      <div className='container'>
-
-        <div className='row d-flex align-items-center' >
-          <div className='col-6'>
-            <h2>Assista onde quiser</h2>
-            <h3>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</h3>
-          </div>
-          <div className='col-6 d-flex justify-content-center'><img src={predador} alt='imagem' /></div>
-        </div>
-
-      </div>
-    </section>
-
-
-     <section className='d-flex align-items-center'>
-      <div className='container'>
-        <div className='row d-flex align-items-center'>
-           <div className='col-6 d-flex justify-content-center ' ><img src={magica} alt='imagem' /></div>
-           <div className='col-6'>
-            <h2>Crie perfis para crianças</h2>
-            <h3>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h3>
+      {/* SEÇÃO 2: Imagem em cima no mobile, Lado a lado no Desktop */}
+      <section className='d-flex align-items-center py-5 border-bottom bg-black text-white'>
+        <div className='container'>
+          <div className='row d-flex align-items-center'>
+            {/* Ordem inversa no desktop: a imagem aparece primeiro no código, mas você pode controlar com 'order' se quiser */}
+            <div className='col-12 col-md-6 d-flex justify-content-center mb-4 mb-md-0'>
+              <img src={vikigns} alt='imagem' className="img-fluid" />
+            </div>
+            <div className='col-12 col-md-6 text-center text-md-start'>
+              <h2>Baixe séries para assistir offline</h2>
+              <h3>Salve seus títulos favoritos e sempre tenha algo para assistir.</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    {/* TERCEIRA SEÇÃO: ASSISTA ONDE QUISER */}
+      <section className='d-flex align-items-center py-5 border-bottom bg-black text-white'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            {/* Texto em cima no mobile, esquerda no desktop */}
+            <div className='col-12 col-md-6 text-center text-md-start mb-4 mb-md-0'>
+              <h2 className='fw-bold display-5'>Assista onde quiser</h2>
+              <h3 className='fw-normal'>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</h3>
+            </div>
+            {/* Imagem embaixo no mobile, direita no desktop */}
+            <div className='col-12 col-md-6 d-flex justify-content-center'>
+              <img src={predador} alt='Assista onde quiser' className='img-fluid' />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* QUARTA SEÇÃO: CRIE PERFIS PARA CRIANÇAS */}
+      <section className='d-flex align-items-center py-5 border-bottom bg-black text-white'>
+        <div className='container'>
+          {/* Usamos flex-column-reverse para o texto ficar sobre a imagem no mobile */}
+          <div className='row align-items-center flex-column-reverse flex-md-row'>
+            <div className='col-12 col-md-6 d-flex justify-content-center mt-4 mt-md-0'>
+              <img src={magica} alt='Perfis infantis' className='img-fluid' />
+            </div>
+            <div className='col-12 col-md-6 text-center text-md-start'>
+              <h2 className='fw-bold display-5'>Crie perfis para crianças</h2>
+              <h3 className='fw-normal'>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 <section>
