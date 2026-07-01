@@ -1,16 +1,19 @@
-# React + Vite
+# 🎬 Netflix Clone - React & Bootstrap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação front-end que replica a interface da Netflix, focado em praticidade, responsividade e organização de componentes. Foi um dos meus maiores desafios iniciais com React, onde pude aplicar conceitos avançados de estilização e manipulação de estados.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🚀 Tecnologias Utilizadas
+- React.js: Biblioteca principal para construção da interface.
+- Bootstrap: Framework utilizado para garantir a rapidez no desenvolvimento e total responsividade.
+- CSS3 / Flexbox: Customizações específicas para atingir a identidade visual da marca.
+- JavaScript (ES6+): Lógica de renderização dinâmica de listas.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 💡 Desafios Técnicos & Aprendizados
+O maior desafio neste projeto foi a estruturação dos componentes reutilizáveis. 
+- Modularização: Criei componentes únicos para as fileiras de filmes (Row) e para o banner principal, facilitando a manutenção do código.
+- Responsividade: Utilizar o grid do Bootstrap para garantir que o catálogo de filmes se ajustasse perfeitamente de telas de smartphones a monitores ultra-wide.
+- Estado do React: Gerenciamento de hover e interações do usuário com os cards de filmes.
